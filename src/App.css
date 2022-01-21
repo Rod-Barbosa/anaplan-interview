@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.app_header{
+  flex-direction: column;
+  display: flex;
+  padding: 20px 20px;
+  gap: 20px;
+}
+.app_header_account{
+  display: flex;
+}
+.app_header_account_title{
+font-size: 24px;
+  flex: 1;
+  display: flex;
+}
+.app_header_account_form{
+  display: flex;
+  gap: 5px;
+}
+.app_header_account_form > .expense{
+  flex: 1;
+}
+.app_header_account_form > .description{
+  flex: 3;
+}
+.app_header_account_form > .value{
+  flex: 1;
+}
+.app_header_account_balance{
+ display: flex;
+  gap: 50px
+}
+
+.app_header_account_balance > .amount{
+  display: flex;
+  flex-direction: column;
+}
+
+.app_header_account_balance > div > .title{
+  font-size: 13px;
+}
+
+.total{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.app_header_account_balance > div > .withdrawels{
+  color: #DB4E55 ;
+}
+
+.app_header_account_balance > div > .deposits{
+  color: #2BAF96 ;
+}
+
+.app_header_account_balance > div > .balance{
+  color: grey ;
+}
+.app_header_account_balance{
+  border-bottom: 1px solid rgb(128, 128, 128, .4);
+
+}
+/* Roll.js */
+.roll{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(128, 128, 128, .4);
+}
+.btn--delete--hidden{
+  visibility: hidden;
+}
+.roll:hover{
+  background-color: rgb(128, 128, 128, .1);
+}
+.btn--delete{
+  visibility: hidden;
+}
+.roll:hover .btn--delete{
+  visibility: visible;
+}
+.roll__amount{
+  font-weight: 550;
+}
+
+.roll__description,.roll__id,
+.roll__amount,.roll__btn--del{
+  padding: .5px 1.5px;
+  align-items: left;
+  display: flex;
+}
+
+/* 480 760 */
+@media screen and (max-width: 760px) {
+
+    .app_header_account_form{
+      flex-direction: column;
+      gap: .75em;
+    }
+
+
+
+
+}
